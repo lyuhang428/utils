@@ -1,0 +1,58 @@
+In[1]:= Clear["`*"]
+dagger[mat_]:=ConjugateTranspose[mat];
+
+\[Sigma]x={{0,1},{1,0}};
+\[Sigma]y={{0,-I},{I,0}};
+\[Sigma]z={{1,0},{0,-1}};
+ii=IdentityMatrix[2];
+basis={Flatten@ii,Flatten@\[Sigma]x,Flatten@\[Sigma]y,Flatten@\[Sigma]z};
+
+(* 稳态不依赖于初始值 *)
+H=\[CapitalDelta]/2*(\[Sigma]z+Bx*\[Sigma]x+By*\[Sigma]y);
+s={{0,0},{1,0}};
+sds=dagger[s].s;
+
+LH=-I*(KroneckerProduct[H,ii]-KroneckerProduct[ii,Transpose@H]);
+LL=\[Gamma]/2*(KroneckerProduct[s,s]-1/2*(KroneckerProduct[sds,IdentityMatrix[2]]+KroneckerProduct[IdentityMatrix[2],sds]));
+unitary=Table[0,{i,4},{j,4}];
+dissipator=Table[0,{i,4},{j,4}];
+Do[
+Do[
+unitary[[i,j]]=Conjugate[basis[[i]]].LH.basis[[j]]/2;
+dissipator[[i,j]]=Conjugate[basis[[i]]].LL.basis[[j]]/2;
+,{j,4}];
+,{i,4}];
+L=unitary+dissipator;
+
+\[CapitalDelta]=1;
+\[Gamma]=0.25;
+Bz=0;
+null=NullSpace[L][[1]];
+\[Rho]ss=null[[1]]*ii+null[[2]]*\[Sigma]x+null[[3]]*\[Sigma]y+null[[4]]*\[Sigma]z;
+\[Rho]ss=Chop[\[Rho]ss/Tr[\[Rho]ss]];
+\[Rho]ss//MatrixForm
+Out[23]//MatrixForm= ((-0.4980544747081712 Bx^2-0.4980544747081712 By^2)/(-2.-0.9961089494163424 Bx^2-0.9961089494163424 By^2)	(0.9961089494163424 Bx-I (-0.0622568093385214 Bx+0.9961089494163424 By)+0.0622568093385214 By)/(-2.-0.9961089494163424 Bx^2-0.9961089494163424 By^2)
+(0.9961089494163424 Bx+I (-0.0622568093385214 Bx+0.9961089494163424 By)+0.0622568093385214 By)/(-2.-0.9961089494163424 Bx^2-0.9961089494163424 By^2)	(-2.-0.4980544747081712 Bx^2-0.4980544747081712 By^2)/(-2.-0.9961089494163424 Bx^2-0.9961089494163424 By^2)
+
+)
+In[24]:= p0[Bx_,By_]:=(-0.4980544747081712` Bx^2-0.4980544747081712` By^2)/(-2.` -0.9961089494163424` Bx^2-0.9961089494163424` By^2);
+p1[Bx_,By_]:=(-2.` -0.4980544747081712` Bx^2-0.4980544747081712` By^2)/(-2.` -0.9961089494163424` Bx^2-0.9961089494163424` By^2);
+coh2[Bx_,By_]:=Abs[(0.9961089494163424` Bx-I (-0.0622568093385214` Bx+0.9961089494163424` By)+0.0622568093385214` By)/(-2.` -0.9961089494163424` Bx^2-0.9961089494163424` By^2)]^2;
+p0data=Table[p0[x,y],{x,-10,10,0.1},{y,-10,10,0.1}];
+p1data=Table[p1[x,y],{x,-10,10,0.1},{y,-10,10,0.1}];
+coh2data=Table[coh2[x,y],{x,-10,10,0.1},{y,-10,10,0.1}];
+Dimensions[p0data]
+Dimensions[p1data]
+Dimensions[coh2data]
+ListPointPlot3D[p0data,PlotRange->{All,All,{0,1}}]
+ListPointPlot3D[p1data,PlotRange->{All,All,{0,1}}]
+ListPointPlot3D[p0data+p1data,PlotRange->All]
+ListPointPlot3D[coh2data,PlotRange->All]
+
+Out[30]= {201,201}
+Out[31]= {201,201}
+Out[32]= {201,201}
+Out[33]= 
+Out[34]= 
+Out[35]= 
+Out[36]= 
