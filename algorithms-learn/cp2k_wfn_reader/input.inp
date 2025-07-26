@@ -1,0 +1,198 @@
+&GLOBAL
+    !PROJECT ${filename}
+    RUN_TYPE ENERGY
+    PRINT_LEVEL MEDIUM
+&END GLOBAL
+
+&FORCE_EVAL
+  METHOD QS
+
+  &PROPERTIES
+    &TDDFPT
+      KERNEL FULL ! for GGA and hybird. STDA is for semi-empirical
+      ! RKS_TRIPLETS ! for RESTRICTED KS for triplet excited states
+      NSTATES 2
+      NLUMO -1
+      MAX_ITER 400
+      CONVERGENCE [eV] 1E-6
+      &MGRID
+        NGRIDS 4
+        CUTOFF 400
+        REL_CUTOFF 40
+      &END MGRID
+      &DIPOLE_MOMENTS
+        DIPOLE_FORM LENGTH ! for periodic and molecular system
+        REFERENCE COM
+      &END DIPOLE_MOMENTS
+      &PRINT
+        &RESTART ON
+        &END RESTART
+        !&NTO_ANALYSIS
+        !  FILENAME T
+        !  CUBE_FILES T
+        !  STRIDE 3 3 3
+        !&END NTO_ANALYSIS
+      &END PRINT
+      !RESTART T
+      !WFN_RESTART_FILE_NAME PROJECT-RESTART.tdwfn
+    &END TDDFPT
+  &END PROPERTIES
+  
+  &SUBSYS
+    &CELL
+      ABC 10 10 10 
+      ALPHA_BETA_GAMMA 90.00 90.00 90.00
+      PERIODIC NONE
+      !PERIODIC XYZ
+    &END CELL
+    &COORD
+      UNIT ANGSTROM
+      @INCLUDE './xyz'
+    &END COORD
+    &TOPOLOGY
+      CONNECTIVITY OFF
+      &CENTER_COORDINATES T
+      &END CENTER_COORDINATES
+    &END TOPOLOGY
+    &KIND O
+      ELEMENT O
+      !BASIS_SET cc-pVDZ
+      !POTENTIAL ALL
+      BASIS_SET DZVP-GTH
+      BASIS_SET AUX_FIT cFIT3
+      POTENTIAL GTH-PBE-q6
+    &END KIND
+    &KIND H
+      ELEMENT H
+      !BASIS_SET cc-pVDZ
+      !POTENTIAL ALL
+      BASIS_SET DZVP-GTH
+      BASIS_SET AUX_FIT cFIT3
+      POTENTIAL GTH-PBE-q1
+    &END KIND
+  &END SUBSYS
+
+  &DFT
+    # using 'ALL_POTENTIALS' or 'POTENTIAL' for non-pp
+    !POTENTIAL_FILE_NAME ALL_POTENTIALS
+    !BASIS_SET_FILE_NAME basis
+    BASIS_SET_FILE_NAME BASIS_MOLOPT
+    BASIS_SET_FILE_NAME GTH_BASIS_SETS
+    BASIS_SET_FILE_NAME BASIS_ADMM
+    BASIS_SET_FILE_NAME BASIS_ADMM_MOLOPT
+    POTENTIAL_FILE_NAME POTENTIAL
+    CHARGE -1
+    MULTIPLICITY 2
+    UKS T ! seems only OT works for it, tradition diagonalization gives error
+    !WFN_RESTART_FILE_NAME restart
+
+    &PRINT
+      &AO_MATRICES OFF
+        FILENAME density_matrix
+        !CORE_HAMILTONIAN T
+        DENSITY T
+        !KINETIC_ENERGY T
+        !KOHN_SHAM_MATRIX T
+        !MATRIX_VXC T
+        !OVERLAP T
+        !POTENTIAL_ENERGY T
+      &END AO_MATRICES
+    &END PRINT
+
+    &POISSON
+      PERIODIC NONE
+      POISSON_SOLVER MT
+      !PERIODIC XYZ
+      !POISSON_SOLVER PERIODIC
+    &END POISSON
+
+    &QS
+      # all electron calculation only supports GAPW. GAPW not compatible with TDDFT
+      METHOD GPW
+      EPS_DEFAULT 1E-12  ! the square root is the default value for PGF below
+      !EPS_FILTER_MATRIX 0
+      EPS_PGF_ORB 1E-60  ! filter matrix 0 means no filtering. Projected Gaussian Orbital set to very small value can get rid of KS matrix not fully occupied warning
+      EXTRAPOLATION ASPC ! similar to PS, but stable for MD
+      EXTRAPOLATION_ORDER 4
+      !MIN_PAIR_LIST_RADIUS -1 ! this is a better way to get rid of KS matrix not fully occupied warning, but not work for version 8.2
+    &END QS
+
+    &XC
+      &XC_FUNCTIONAL
+        &PBE
+          !SCALE_X 0.75
+          !SCALE_C 1.0
+        &END PBE
+      &END XC_FUNCTIONAL
+      !&XC_GRID
+      !  XC_SMOOTH_RHO NN50
+      !  XC_DERIV NN50_SMOOTH
+      !&END XC_GRID
+    
+      !&HF
+      !  FRACTION 0.25
+      !  &SCREENING
+      !    EPS_SCHWARZ 1E-10
+      !    SCREEN_ON_INITIAL_P F
+      !  &END SCREENING
+      !  &INTERACTION_POTENTIAL
+      !    CUTOFF_RADIUS 4.5
+      !    POTENTIAL_TYPE TRUNCATED
+      !    T_C_G_DATA t_c_g.dat
+      !  &END INTERACTION_POTENTIAL
+      !  !&MEMORY
+      !  !&END MEMORY
+      !&END HF
+    &END XC
+
+    &MGRID
+      CUTOFF 400
+      REL_CUTOFF 40
+      NGRIDS 4
+    &END MGRID
+
+    &SCF
+      MAX_SCF 900
+      EPS_SCF 1E-6
+      SCF_GUESS ATOMIC
+      !CHOLESKY INVERSE
+      !ADDED_MOS -1 ! use all MOs
+      !&SMEAR ON ! better to use for metallic and semi-conductor
+      !  METHOD FERMI_DIRAC
+      !  ELECTRONIC_TEMPERATURE [K] 300
+      !&END SMEAR
+      !&DIAGONALIZATION ! common diagonalization strategy, choose this over OT
+      !  ALGORITHM STANDARD
+      !  MAX_ITER 50
+      !  EPS_ADAPT 0.01
+      !&END DIAGONALIZATION
+      &OT ! for metallic, semi-conductor, OT is not reliable. But for UKS, seems only OT runs...
+        PRECONDITIONER FULL_ALL
+        MINIMIZER CG
+      &END OT
+      &MIXING
+        METHOD BROYDEN_MIXING
+        !ALPHA 0.1
+        !BETA 1.5
+        !METHOD PULAY_MIXING
+        NBUFFER 8
+      &END MIXING
+      &PRINT
+        &RESTART LOW
+          COMMON_ITERATION_LEVELS 1
+        &END RESTART
+      &END PRINT
+      &OUTER_SCF
+        MAX_SCF 10
+        EPS_SCF 1E-6
+      &END OUTER_SCF
+    &END SCF
+    !&AUXILIARY_DENSITY_MATRIX_METHOD    ! requires OT section. OT is not compatable with DIAGONOLIZATION. ADMM required without a DFT%XC%HF section, it will be ignored for the SCF
+    !  !ADMM_PURIFICATION_METHOD MO_DIAG ! for MD
+    !  ADMM_PURIFICATION_METHOD NONE     ! for periodic system tddfpt calculation
+    !  METHOD BASIS_PROJECTION
+    !  EXCH_SCALING_MODEL NONE
+    !  EXCH_CORRECTION_FUNC NONE
+    !&END AUXILIARY_DENSITY_MATRIX_METHOD
+  &END DFT
+&END FORCE_EVAL
