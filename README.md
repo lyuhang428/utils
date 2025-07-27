@@ -7,4 +7,4 @@ This folder contains naive implementation of data structure (far from completene
 A home made minimistic code that does Hartree Fock level quantum chemistry calculation. I prioritize readability over performance. 
 
 ### quantum dynamics Lindbladian
-Naive quantm dynamics related materials, introduing density matrix, Liouville space, and system-bath coupling in the Lindbladian scheme. 
+Naive quantum dynamics related materials, introduing density matrix, Liouville space, and system-bath coupling in the Lindbladian scheme. 
