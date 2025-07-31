@@ -1,0 +1,72 @@
+In[37]:= Clear["`*"]
+dagger[mat_]:=ConjugateTranspose[mat];
+
+\[Sigma]x={{0,1},{1,0}};
+\[Sigma]y={{0,-I},{I,0}};
+\[Sigma]z={{1,0},{0,-1}};
+ii=IdentityMatrix[2];
+basis={Flatten@ii,Flatten@\[Sigma]x,Flatten@\[Sigma]y,Flatten@\[Sigma]z};
+
+H=\[CapitalDelta]/2*\[Sigma]x;
+(*s=\[Sigma]x;*)
+s={{1,1},{-1,-1}}/2;
+sds=dagger@s.s;
+
+LH=-I*(KroneckerProduct[H,IdentityMatrix[2]]-KroneckerProduct[IdentityMatrix[2],H]);
+LL=\[Gamma]*(KroneckerProduct[s,s]-1/2*(KroneckerProduct[sds,IdentityMatrix[2]]+KroneckerProduct[IdentityMatrix[2],sds]));
+unitary=Table[0,{i,4},{j,4}];
+dissipator=Table[0,{i,4},{j,4}];
+Do[
+Do[
+unitary[[i,j]]=Conjugate[basis[[i]]].LH.basis[[j]]/2;
+dissipator[[i,j]]=Conjugate[basis[[i]]].LL.basis[[j]]/2;
+,{j,4}];
+,{i,4}];
+L=unitary+dissipator;
+L//MatrixForm
+Out[53]//MatrixForm= (0	0	0	0
+-\[Gamma]	-\[Gamma]	0	0
+0	0	-(\[Gamma]/2)	-\[CapitalDelta]
+0	0	\[CapitalDelta]	-(\[Gamma]/2)
+
+)
+In[54]:= \[Rho]0={\[Rho]ii0,\[Rho]x0,\[Rho]y0,\[Rho]z0};
+\[Rho]t={\[Rho]ii[t],\[Rho]x[t],\[Rho]y[t],\[Rho]z[t]};
+L\[Rho]=L.\[Rho]t;
+
+res=DSolve[
+{\[Rho]ii'[t]==L\[Rho][[1]],
+\[Rho]x'[t]==L\[Rho][[2]],
+\[Rho]y'[t]==L\[Rho][[3]],
+\[Rho]z'[t]==L\[Rho][[4]],
+\[Rho]ii[0]==\[Rho]0[[1]],
+\[Rho]x[0]==\[Rho]0[[2]],
+\[Rho]y[0]==\[Rho]0[[3]],
+\[Rho]z[0]==\[Rho]0[[4]]},
+{\[Rho]ii[t],\[Rho]x[t],\[Rho]y[t],\[Rho]z[t]},t];
+res
+Out[58]= {{\[Rho]ii[t]->\[Rho]ii0,\[Rho]x[t]->-E^(-t \[Gamma]) (-\[Rho]ii0+E^(t \[Gamma]) \[Rho]ii0-\[Rho]x0),\[Rho]y[t]->E^(-((t \[Gamma])/2)) (\[Rho]y0 Cos[t \[CapitalDelta]]-\[Rho]z0 Sin[t \[CapitalDelta]]),\[Rho]z[t]->E^(-((t \[Gamma])/2)) (\[Rho]z0 Cos[t \[CapitalDelta]]+\[Rho]y0 Sin[t \[CapitalDelta]])}}
+In[59]:= \[Rho]ii0=1/2;
+\[Rho]t=\[Rho]ii[t]*ii+\[Rho]x[t]*\[Sigma]x+\[Rho]y[t]*\[Sigma]y+\[Rho]z[t]*\[Sigma]z/.res[[1]];
+\[Rho]t//MatrixForm//FullSimplify
+\[Rho]t[[1,1]]+\[Rho]t[[2,2]]//FullSimplify
+
+\[CapitalDelta]=1.;
+\[Gamma]=0.25;
+\[Rho]x0=0;
+\[Rho]y0=0;
+\[Rho]z0=-1/2;
+
+p0=\[Rho]t[[1,1]];
+p1=\[Rho]t[[2,2]];
+Plot[{p0,p1},{t,0,20},
+PlotRange->All,
+PlotLegends->LineLegend[{"p0","p1"}]]
+Out[61]//MatrixForm= (1/2+E^(-((t \[Gamma])/2)) (\[Rho]z0 Cos[t \[CapitalDelta]]+\[Rho]y0 Sin[t \[CapitalDelta]])	1/2 (-1+E^(-t \[Gamma]) (1+2 \[Rho]x0)-2 I E^(-((t \[Gamma])/2)) (\[Rho]y0 Cos[t \[CapitalDelta]]-\[Rho]z0 Sin[t \[CapitalDelta]]))
+1/2 (-1+E^(-t \[Gamma]) (1+2 \[Rho]x0)+2 I E^(-((t \[Gamma])/2)) (\[Rho]y0 Cos[t \[CapitalDelta]]-\[Rho]z0 Sin[t \[CapitalDelta]]))	1/2-E^(-((t \[Gamma])/2)) (\[Rho]z0 Cos[t \[CapitalDelta]]+\[Rho]y0 Sin[t \[CapitalDelta]])
+
+)
+Out[62]= 1
+Out[70]= 	p0
+	p1
+
