@@ -1,0 +1,285 @@
+Atom: H
+Iter:   0 	 etot:  -0.400242 	 kin_rad:   0.500000 	 kin_ang:   0.000000 	 e_hartree:   0.312500 	 e_xc:  -0.212742 	 e_ext:  -1.000000
+Iter:   1 	 etot:  -0.405202 	 kin_rad:   0.446651 	 kin_ang:   0.000000 	 e_hartree:   0.292140 	 e_xc:  -0.199222 	 e_ext:  -0.944771
+Iter:   2 	 etot:  -0.406289 	 kin_rad:   0.422514 	 kin_ang:   0.000000 	 e_hartree:   0.282209 	 e_xc:  -0.192665 	 e_ext:  -0.918346
+Iter:   3 	 etot:  -0.406492 	 kin_rad:   0.412553 	 kin_ang:   0.000000 	 e_hartree:   0.277862 	 e_xc:  -0.189814 	 e_ext:  -0.907093
+Iter:   4 	 etot:  -0.406527 	 kin_rad:   0.408705 	 kin_ang:   0.000000 	 e_hartree:   0.276083 	 e_xc:  -0.188655 	 e_ext:  -0.902658
+Iter:   5 	 etot:  -0.406533 	 kin_rad:   0.407284 	 kin_ang:   0.000000 	 e_hartree:   0.275378 	 e_xc:  -0.188201 	 e_ext:  -0.900993
+Iter:   6 	 etot:  -0.406534 	 kin_rad:   0.406779 	 kin_ang:   0.000000 	 e_hartree:   0.275102 	 e_xc:  -0.188026 	 e_ext:  -0.900389
+Iter:   7 	 etot:  -0.406534 	 kin_rad:   0.406607 	 kin_ang:   0.000000 	 e_hartree:   0.274994 	 e_xc:  -0.187958 	 e_ext:  -0.900176
+SCF converged after   7 iters
+Total energy: -0.4065340169248055
+
+Atom: He
+Iter:   0 	 etot:  -2.572150 	 kin_rad:   4.000000 	 kin_ang:   0.000000 	 e_hartree:   2.500000 	 e_xc:  -1.072150 	 e_ext:  -8.000000
+Iter:   1 	 etot:  -2.695659 	 kin_rad:   3.217180 	 kin_ang:   0.000000 	 e_hartree:   2.200354 	 e_xc:  -0.946396 	 e_ext:  -7.166798
+Iter:   2 	 etot:  -2.719776 	 kin_rad:   2.886227 	 kin_ang:   0.000000 	 e_hartree:   2.056858 	 e_xc:  -0.886617 	 e_ext:  -6.776244
+Iter:   3 	 etot:  -2.723167 	 kin_rad:   2.769722 	 kin_ang:   0.000000 	 e_hartree:   2.001165 	 e_xc:  -0.863656 	 e_ext:  -6.630398
+Iter:   4 	 etot:  -2.723574 	 kin_rad:   2.734783 	 kin_ang:   0.000000 	 e_hartree:   1.982531 	 e_xc:  -0.856093 	 e_ext:  -6.584795
+Iter:   5 	 etot:  -2.723628 	 kin_rad:   2.725628 	 kin_ang:   0.000000 	 e_hartree:   1.976701 	 e_xc:  -0.853787 	 e_ext:  -6.572170
+Iter:   6 	 etot:  -2.723637 	 kin_rad:   2.723613 	 kin_ang:   0.000000 	 e_hartree:   1.974887 	 e_xc:  -0.853098 	 e_ext:  -6.569039
+Iter:   7 	 etot:  -2.723639 	 kin_rad:   2.723344 	 kin_ang:   0.000000 	 e_hartree:   1.974301 	 e_xc:  -0.852888 	 e_ext:  -6.568396
+Iter:   8 	 etot:  -2.723640 	 kin_rad:   2.723415 	 kin_ang:   0.000000 	 e_hartree:   1.974098 	 e_xc:  -0.852822 	 e_ext:  -6.568332
+SCF converged after   8 iters
+Total energy: -2.723639642151313
+
+Atom: Li
+Iter:   0 	 etot:  -6.738241 	 kin_rad:  10.125000 	 kin_ang:   0.000000 	 e_hartree:   5.234845 	 e_xc:  -1.848086 	 e_ext: -20.250000
+Iter:   1 	 etot:  -7.075012 	 kin_rad:   8.355026 	 kin_ang:   0.000000 	 e_hartree:   4.568045 	 e_xc:  -1.646998 	 e_ext: -18.351085
+Iter:   2 	 etot:  -7.154553 	 kin_rad:   7.609729 	 kin_ang:   0.000000 	 e_hartree:   4.224473 	 e_xc:  -1.549442 	 e_ext: -17.439313
+Iter:   3 	 etot:  -7.171065 	 kin_rad:   7.325179 	 kin_ang:   0.000000 	 e_hartree:   4.064097 	 e_xc:  -1.507506 	 e_ext: -17.052835
+Iter:   4 	 etot:  -7.174199 	 kin_rad:   7.224264 	 kin_ang:   0.000000 	 e_hartree:   3.994921 	 e_xc:  -1.490932 	 e_ext: -16.902452
+Iter:   5 	 etot:  -7.174760 	 kin_rad:   7.190324 	 kin_ang:   0.000000 	 e_hartree:   3.966742 	 e_xc:  -1.484721 	 e_ext: -16.847106
+Iter:   6 	 etot:  -7.174859 	 kin_rad:   7.179408 	 kin_ang:   0.000000 	 e_hartree:   3.955606 	 e_xc:  -1.482461 	 e_ext: -16.827412
+Iter:   7 	 etot:  -7.174877 	 kin_rad:   7.176070 	 kin_ang:   0.000000 	 e_hartree:   3.951243 	 e_xc:  -1.481649 	 e_ext: -16.820541
+Iter:   8 	 etot:  -7.174880 	 kin_rad:   7.175123 	 kin_ang:   0.000000 	 e_hartree:   3.949529 	 e_xc:  -1.481359 	 e_ext: -16.818174
+Iter:   9 	 etot:  -7.174881 	 kin_rad:   7.174890 	 kin_ang:   0.000000 	 e_hartree:   3.948850 	 e_xc:  -1.481256 	 e_ext: -16.817365
+SCF converged after   9 iters
+Total energy: -7.1748808612722375
+
+Atom: Be
+Iter:   0 	 etot: -13.312225 	 kin_rad:  20.000000 	 kin_ang:   0.000000 	 e_hartree:   9.561150 	 e_xc:  -2.873375 	 e_ext: -40.000000
+Iter:   1 	 etot: -14.020888 	 kin_rad:  16.534531 	 kin_ang:   0.000000 	 e_hartree:   8.254146 	 e_xc:  -2.549420 	 e_ext: -36.260146
+Iter:   2 	 etot: -14.187139 	 kin_rad:  15.072950 	 kin_ang:   0.000000 	 e_hartree:   7.565541 	 e_xc:  -2.388354 	 e_ext: -34.437275
+Iter:   3 	 etot: -14.218156 	 kin_rad:  14.511332 	 kin_ang:   0.000000 	 e_hartree:   7.247878 	 e_xc:  -2.318146 	 e_ext: -33.659220
+Iter:   4 	 etot: -14.222680 	 kin_rad:  14.314586 	 kin_ang:   0.000000 	 e_hartree:   7.121790 	 e_xc:  -2.291359 	 e_ext: -33.367697
+Iter:   5 	 etot: -14.223224 	 kin_rad:  14.250801 	 kin_ang:   0.000000 	 e_hartree:   7.077475 	 e_xc:  -2.282164 	 e_ext: -33.269336
+Iter:   6 	 etot: -14.223284 	 kin_rad:  14.231214 	 kin_ang:   0.000000 	 e_hartree:   7.062924 	 e_xc:  -2.279194 	 e_ext: -33.238228
+Iter:   7 	 etot: -14.223290 	 kin_rad:  14.225443 	 kin_ang:   0.000000 	 e_hartree:   7.058286 	 e_xc:  -2.278261 	 e_ext: -33.228758
+Iter:   8 	 etot: -14.223291 	 kin_rad:  14.223819 	 kin_ang:   0.000000 	 e_hartree:   7.056824 	 e_xc:  -2.277972 	 e_ext: -33.225961
+SCF converged after   8 iters
+Total energy: -14.223290711254714
+
+Atom: B
+Iter:   0 	 etot: -22.129142 	 kin_rad:  32.291667 	 kin_ang:   2.083333 	 e_hartree:  16.454616 	 e_xc:  -4.208758 	 e_ext: -68.750000
+Iter:   1 	 etot: -23.654364 	 kin_rad:  26.805188 	 kin_ang:   1.146941 	 e_hartree:  13.753366 	 e_xc:  -3.654902 	 e_ext: -61.704956
+Iter:   2 	 etot: -23.995723 	 kin_rad:  24.591158 	 kin_ang:   0.731284 	 e_hartree:  12.294621 	 e_xc:  -3.374713 	 e_ext: -58.238073
+Iter:   3 	 etot: -24.045825 	 kin_rad:  23.826239 	 kin_ang:   0.571716 	 e_hartree:  11.662651 	 e_xc:  -3.259115 	 e_ext: -56.847317
+Iter:   4 	 etot: -24.050098 	 kin_rad:  23.610180 	 kin_ang:   0.524368 	 e_hartree:  11.464353 	 e_xc:  -3.223338 	 e_ext: -56.425661
+Iter:   5 	 etot: -24.050368 	 kin_rad:  23.557931 	 kin_ang:   0.513900 	 e_hartree:  11.418384 	 e_xc:  -3.214780 	 e_ext: -56.325803
+Iter:   6 	 etot: -24.050398 	 kin_rad:  23.545020 	 kin_ang:   0.511970 	 e_hartree:  11.409001 	 e_xc:  -3.212857 	 e_ext: -56.303533
+Iter:   7 	 etot: -24.050404 	 kin_rad:  23.541219 	 kin_ang:   0.511619 	 e_hartree:  11.406917 	 e_xc:  -3.212352 	 e_ext: -56.297808
+Iter:   8 	 etot: -24.050406 	 kin_rad:  23.539867 	 kin_ang:   0.511539 	 e_hartree:  11.406326 	 e_xc:  -3.212181 	 e_ext: -56.295956
+Iter:   9 	 etot: -24.050406 	 kin_rad:  23.539327 	 kin_ang:   0.511511 	 e_hartree:  11.406107 	 e_xc:  -3.212112 	 e_ext: -56.295239
+SCF converged after   9 iters
+Total energy: -24.050406038139393
+
+Atom: C
+Iter:   0 	 etot: -33.624418 	 kin_rad:  48.000000 	 kin_ang:   6.000000 	 e_hartree:  26.239198 	 e_xc:  -5.863616 	 e_ext: -108.000000
+Iter:   1 	 etot: -36.400322 	 kin_rad:  39.790867 	 kin_ang:   3.361389 	 e_hartree:  21.413410 	 e_xc:  -4.992877 	 e_ext: -95.973111
+Iter:   2 	 etot: -36.983483 	 kin_rad:  36.587461 	 kin_ang:   2.211118 	 e_hartree:  18.802881 	 e_xc:  -4.549900 	 e_ext: -90.035044
+Iter:   3 	 etot: -37.049669 	 kin_rad:  35.594964 	 kin_ang:   1.821265 	 e_hartree:  17.778881 	 e_xc:  -4.382760 	 e_ext: -87.862020
+Iter:   4 	 etot: -37.053197 	 kin_rad:  35.378077 	 kin_ang:   1.741637 	 e_hartree:  17.543131 	 e_xc:  -4.344015 	 e_ext: -87.372026
+Iter:   5 	 etot: -37.053510 	 kin_rad:  35.338070 	 kin_ang:   1.733970 	 e_hartree:  17.509494 	 e_xc:  -4.337869 	 e_ext: -87.297175
+Iter:   6 	 etot: -37.053582 	 kin_rad:  35.327021 	 kin_ang:   1.734113 	 e_hartree:  17.503579 	 e_xc:  -4.336516 	 e_ext: -87.281780
+Iter:   7 	 etot: -37.053600 	 kin_rad:  35.322565 	 kin_ang:   1.734464 	 e_hartree:  17.501586 	 e_xc:  -4.336001 	 e_ext: -87.276212
+Iter:   8 	 etot: -37.053604 	 kin_rad:  35.320567 	 kin_ang:   1.734639 	 e_hartree:  17.500707 	 e_xc:  -4.335767 	 e_ext: -87.273749
+Iter:   9 	 etot: -37.053605 	 kin_rad:  35.319647 	 kin_ang:   1.734715 	 e_hartree:  17.500292 	 e_xc:  -4.335656 	 e_ext: -87.272603
+Iter:  10 	 etot: -37.053605 	 kin_rad:  35.319220 	 kin_ang:   1.734744 	 e_hartree:  17.500092 	 e_xc:  -4.335603 	 e_ext: -87.272058
+SCF converged after  10 iters
+Total energy: -37.053605312620505
+
+Atom: N
+Iter:   0 	 etot: -48.025117 	 kin_rad:  67.375000 	 kin_ang:  12.250000 	 e_hartree:  39.459816 	 e_xc:  -7.859933 	 e_ext: -159.250000
+Iter:   1 	 etot: -52.581787 	 kin_rad:  55.618258 	 kin_ang:   6.938511 	 e_hartree:  31.623271 	 e_xc:  -6.578201 	 e_ext: -140.183626
+Iter:   2 	 etot: -53.482699 	 kin_rad:  51.150306 	 kin_ang:   4.664744 	 e_hartree:  27.408981 	 e_xc:  -5.926547 	 e_ext: -130.780183
+Iter:   3 	 etot: -53.563508 	 kin_rad:  49.909717 	 kin_ang:   3.985691 	 e_hartree:  25.921095 	 e_xc:  -5.703740 	 e_ext: -127.676271
+Iter:   4 	 etot: -53.567094 	 kin_rad:  49.710816 	 kin_ang:   3.900639 	 e_hartree:  25.679551 	 e_xc:  -5.666759 	 e_ext: -127.191341
+Iter:   5 	 etot: -53.567705 	 kin_rad:  49.680673 	 kin_ang:   3.903445 	 e_hartree:  25.655785 	 e_xc:  -5.662378 	 e_ext: -127.145230
+Iter:   6 	 etot: -53.567856 	 kin_rad:  49.669110 	 kin_ang:   3.906420 	 e_hartree:  25.648044 	 e_xc:  -5.660815 	 e_ext: -127.130614
+Iter:   7 	 etot: -53.567892 	 kin_rad:  49.663784 	 kin_ang:   3.907910 	 e_hartree:  25.644658 	 e_xc:  -5.660112 	 e_ext: -127.124132
+Iter:   8 	 etot: -53.567900 	 kin_rad:  49.661231 	 kin_ang:   3.908602 	 e_hartree:  25.643110 	 e_xc:  -5.659784 	 e_ext: -127.121060
+Iter:   9 	 etot: -53.567902 	 kin_rad:  49.659982 	 kin_ang:   3.908907 	 e_hartree:  25.642376 	 e_xc:  -5.659626 	 e_ext: -127.119540
+Iter:  10 	 etot: -53.567903 	 kin_rad:  49.659368 	 kin_ang:   3.909035 	 e_hartree:  25.642021 	 e_xc:  -5.659550 	 e_ext: -127.118777
+SCF converged after  10 iters
+Total energy: -53.56790294257976
+
+Atom: O
+Iter:   0 	 etot: -65.555828 	 kin_rad:  90.666667 	 kin_ang:  21.333333 	 e_hartree:  56.661394 	 e_xc: -10.217222 	 e_ext: -224.000000
+Iter:   1 	 etot: -72.519786 	 kin_rad:  74.413421 	 kin_ang:  12.171995 	 e_hartree:  44.771565 	 e_xc:  -8.424094 	 e_ext: -195.452672
+Iter:   2 	 etot: -73.823764 	 kin_rad:  68.367445 	 kin_ang:   8.316434 	 e_hartree:  38.430782 	 e_xc:  -7.515722 	 e_ext: -181.422704
+Iter:   3 	 etot: -73.919123 	 kin_rad:  66.862871 	 kin_ang:   7.301497 	 e_hartree:  36.412190 	 e_xc:  -7.234533 	 e_ext: -177.261149
+Iter:   4 	 etot: -73.923964 	 kin_rad:  66.700841 	 kin_ang:   7.243690 	 e_hartree:  36.191569 	 e_xc:  -7.202770 	 e_ext: -176.857294
+Iter:   5 	 etot: -73.925076 	 kin_rad:  66.676816 	 kin_ang:   7.259483 	 e_hartree:  36.166285 	 e_xc:  -7.198533 	 e_ext: -176.829127
+Iter:   6 	 etot: -73.925343 	 kin_rad:  66.664670 	 kin_ang:   7.266218 	 e_hartree:  36.152980 	 e_xc:  -7.196356 	 e_ext: -176.812855
+Iter:   7 	 etot: -73.925406 	 kin_rad:  66.659033 	 kin_ang:   7.269698 	 e_hartree:  36.147556 	 e_xc:  -7.195436 	 e_ext: -176.806256
+Iter:   8 	 etot: -73.925420 	 kin_rad:  66.656117 	 kin_ang:   7.271252 	 e_hartree:  36.145031 	 e_xc:  -7.195000 	 e_ext: -176.802821
+Iter:   9 	 etot: -73.925424 	 kin_rad:  66.654605 	 kin_ang:   7.271930 	 e_hartree:  36.143847 	 e_xc:  -7.194792 	 e_ext: -176.801013
+Iter:  10 	 etot: -73.925424 	 kin_rad:  66.653822 	 kin_ang:   7.272215 	 e_hartree:  36.143278 	 e_xc:  -7.194691 	 e_ext: -176.800048
+SCF converged after  10 iters
+Total energy: -73.92542433563085
+
+Atom: F
+Iter:   0 	 etot: -86.439217 	 kin_rad: 118.125000 	 kin_ang:  33.750000 	 e_hartree:  78.388853 	 e_xc: -12.953070 	 e_ext: -303.750000
+Iter:   1 	 etot: -96.533995 	 kin_rad:  96.301828 	 kin_ang:  19.354282 	 e_hartree:  61.246302 	 e_xc: -10.542487 	 e_ext: -262.893920
+Iter:   2 	 etot: -98.335739 	 kin_rad:  88.326078 	 kin_ang:  13.389632 	 e_hartree:  52.185362 	 e_xc:  -9.327328 	 e_ext: -242.909484
+Iter:   3 	 etot: -98.446802 	 kin_rad:  86.546678 	 kin_ang:  12.004902 	 e_hartree:  49.574306 	 e_xc:  -8.986115 	 e_ext: -237.586573
+Iter:   4 	 etot: -98.454226 	 kin_rad:  86.439903 	 kin_ang:  12.009771 	 e_hartree:  49.395690 	 e_xc:  -8.961897 	 e_ext: -237.337692
+Iter:   5 	 etot: -98.456053 	 kin_rad:  86.417685 	 kin_ang:  12.037578 	 e_hartree:  49.352284 	 e_xc:  -8.955844 	 e_ext: -237.307756
+Iter:   6 	 etot: -98.456482 	 kin_rad:  86.406760 	 kin_ang:  12.050607 	 e_hartree:  49.332040 	 e_xc:  -8.953032 	 e_ext: -237.292857
+Iter:   7 	 etot: -98.456579 	 kin_rad:  86.401393 	 kin_ang:  12.057058 	 e_hartree:  49.323736 	 e_xc:  -8.951852 	 e_ext: -237.286914
+Iter:   8 	 etot: -98.456601 	 kin_rad:  86.398338 	 kin_ang:  12.059872 	 e_hartree:  49.319871 	 e_xc:  -8.951293 	 e_ext: -237.283388
+Iter:   9 	 etot: -98.456606 	 kin_rad:  86.396643 	 kin_ang:  12.061082 	 e_hartree:  49.318082 	 e_xc:  -8.951029 	 e_ext: -237.281384
+Iter:  10 	 etot: -98.456607 	 kin_rad:  86.395716 	 kin_ang:  12.061581 	 e_hartree:  49.317231 	 e_xc:  -8.950901 	 e_ext: -237.280234
+Iter:  11 	 etot: -98.456607 	 kin_rad:  86.395223 	 kin_ang:  12.061783 	 e_hartree:  49.316825 	 e_xc:  -8.950839 	 e_ext: -237.279598
+SCF converged after  11 iters
+Total energy: -98.45660698123548
+
+Atom: Ne
+Iter:   0 	 etot: -110.896430 	 kin_rad: 150.000000 	 kin_ang:  50.000000 	 e_hartree: 105.187114 	 e_xc: -16.083544 	 e_ext: -400.000000
+Iter:   1 	 etot: -124.943083 	 kin_rad: 121.408465 	 kin_ang:  28.776808 	 e_hartree:  81.434925 	 e_xc: -12.944291 	 e_ext: -343.618990
+Iter:   2 	 etot: -127.346677 	 kin_rad: 111.112958 	 kin_ang:  20.107092 	 e_hartree:  68.989134 	 e_xc: -11.370372 	 e_ext: -316.185489
+Iter:   3 	 etot: -127.475715 	 kin_rad: 109.053233 	 kin_ang:  18.331939 	 e_hartree:  65.729129 	 e_xc: -10.968359 	 e_ext: -309.621658
+Iter:   4 	 etot: -127.487127 	 kin_rad: 109.019113 	 kin_ang:  18.435813 	 e_hartree:  65.607399 	 e_xc: -10.953032 	 e_ext: -309.596419
+Iter:   5 	 etot: -127.489920 	 kin_rad: 108.994389 	 kin_ang:  18.472702 	 e_hartree:  65.526162 	 e_xc: -10.943165 	 e_ext: -309.540009
+Iter:   6 	 etot: -127.490559 	 kin_rad: 108.987955 	 kin_ang:  18.496572 	 e_hartree:  65.499756 	 e_xc: -10.939974 	 e_ext: -309.534868
+Iter:   7 	 etot: -127.490701 	 kin_rad: 108.983147 	 kin_ang:  18.506711 	 e_hartree:  65.486891 	 e_xc: -10.938405 	 e_ext: -309.529046
+Iter:   8 	 etot: -127.490732 	 kin_rad: 108.980301 	 kin_ang:  18.511336 	 e_hartree:  65.481439 	 e_xc: -10.937725 	 e_ext: -309.526083
+Iter:   9 	 etot: -127.490739 	 kin_rad: 108.978495 	 kin_ang:  18.513228 	 e_hartree:  65.478828 	 e_xc: -10.937393 	 e_ext: -309.523897
+Iter:  10 	 etot: -127.490740 	 kin_rad: 108.977460 	 kin_ang:  18.514010 	 e_hartree:  65.477627 	 e_xc: -10.937236 	 e_ext: -309.522601
+Iter:  11 	 etot: -127.490741 	 kin_rad: 108.976882 	 kin_ang:  18.514317 	 e_hartree:  65.477053 	 e_xc: -10.937160 	 e_ext: -309.521832
+SCF converged after  11 iters
+Total energy: -127.49074067652462
+
+Atom: Na
+Iter:   0 	 etot: -141.158121 	 kin_rad: 188.222222 	 kin_ang:  60.500000 	 e_hartree: 125.836172 	 e_xc: -18.272071 	 e_ext: -497.444444
+Iter:   1 	 etot: -157.374621 	 kin_rad: 152.429849 	 kin_ang:  36.913761 	 e_hartree:  98.929506 	 e_xc: -14.914802 	 e_ext: -430.732934
+Iter:   2 	 etot: -160.321669 	 kin_rad: 139.216750 	 kin_ang:  27.271525 	 e_hartree:  84.975685 	 e_xc: -13.250276 	 e_ext: -398.535352
+Iter:   3 	 etot: -160.578659 	 kin_rad: 135.994275 	 kin_ang:  25.121226 	 e_hartree:  80.694900 	 e_xc: -12.771276 	 e_ext: -389.617783
+Iter:   4 	 etot: -160.615755 	 kin_rad: 135.536868 	 kin_ang:  25.127148 	 e_hartree:  79.934026 	 e_xc: -12.706702 	 e_ext: -388.507095
+Iter:   5 	 etot: -160.625480 	 kin_rad: 135.419170 	 kin_ang:  25.231474 	 e_hartree:  79.669004 	 e_xc: -12.692413 	 e_ext: -388.252716
+Iter:   6 	 etot: -160.627686 	 kin_rad: 135.364199 	 kin_ang:  25.280673 	 e_hartree:  79.536993 	 e_xc: -12.686150 	 e_ext: -388.123402
+Iter:   7 	 etot: -160.628126 	 kin_rad: 135.337561 	 kin_ang:  25.301930 	 e_hartree:  79.476753 	 e_xc: -12.683463 	 e_ext: -388.060908
+Iter:   8 	 etot: -160.628209 	 kin_rad: 135.324464 	 kin_ang:  25.310624 	 e_hartree:  79.450663 	 e_xc: -12.682319 	 e_ext: -388.031641
+Iter:   9 	 etot: -160.628224 	 kin_rad: 135.318028 	 kin_ang:  25.314072 	 e_hartree:  79.439617 	 e_xc: -12.681831 	 e_ext: -388.018110
+Iter:  10 	 etot: -160.628227 	 kin_rad: 135.314886 	 kin_ang:  25.315417 	 e_hartree:  79.434971 	 e_xc: -12.681623 	 e_ext: -388.011878
+Iter:  11 	 etot: -160.628227 	 kin_rad: 135.313364 	 kin_ang:  25.315937 	 e_hartree:  79.433012 	 e_xc: -12.681532 	 e_ext: -388.009008
+SCF converged after  11 iters
+Total energy: -160.62822733977035
+
+Atom: Mg
+Iter:   0 	 etot: -175.536039 	 kin_rad: 231.999999 	 kin_ang:  72.000000 	 e_hartree: 149.123987 	 e_xc: -20.660025 	 e_ext: -607.999999
+Iter:   1 	 etot: -194.204028 	 kin_rad: 187.885483 	 kin_ang:  46.092978 	 e_hartree: 118.652474 	 e_xc: -17.047307 	 e_ext: -529.787656
+Iter:   2 	 etot: -197.780523 	 kin_rad: 171.231905 	 kin_ang:  35.507971 	 e_hartree: 102.895033 	 e_xc: -15.263321 	 e_ext: -492.152110
+Iter:   3 	 etot: -198.180698 	 kin_rad: 166.583622 	 kin_ang:  32.931713 	 e_hartree:  97.425193 	 e_xc: -14.690601 	 e_ext: -480.430625
+Iter:   4 	 etot: -198.236010 	 kin_rad: 165.612348 	 kin_ang:  32.790715 	 e_hartree:  96.027228 	 e_xc: -14.572410 	 e_ext: -478.093891
+Iter:   5 	 etot: -198.246728 	 kin_rad: 165.374863 	 kin_ang:  32.906074 	 e_hartree:  95.597883 	 e_xc: -14.546500 	 e_ext: -477.579048
+Iter:   6 	 etot: -198.248500 	 kin_rad: 165.294257 	 kin_ang:  32.971538 	 e_hartree:  95.442492 	 e_xc: -14.538952 	 e_ext: -477.417835
+Iter:   7 	 etot: -198.248752 	 kin_rad: 165.261966 	 kin_ang:  32.998214 	 e_hartree:  95.386899 	 e_xc: -14.536485 	 e_ext: -477.359346
+Iter:   8 	 etot: -198.248786 	 kin_rad: 165.247894 	 kin_ang:  33.007921 	 e_hartree:  95.367358 	 e_xc: -14.535620 	 e_ext: -477.336339
+Iter:   9 	 etot: -198.248791 	 kin_rad: 165.241495 	 kin_ang:  33.011250 	 e_hartree:  95.360475 	 e_xc: -14.535296 	 e_ext: -477.326715
+Iter:  10 	 etot: -198.248792 	 kin_rad: 165.238533 	 kin_ang:  33.012349 	 e_hartree:  95.358026 	 e_xc: -14.535168 	 e_ext: -477.322530
+SCF converged after  10 iters
+Total energy: -198.2487917068977
+
+Atom: Al
+Iter:   0 	 etot: -213.156051 	 kin_rad: 277.493826 	 kin_ang:  88.672839 	 e_hartree: 176.304195 	 e_xc: -23.293580 	 e_ext: -732.333332
+Iter:   1 	 etot: -235.321202 	 kin_rad: 225.436494 	 kin_ang:  58.083662 	 e_hartree: 140.595492 	 e_xc: -19.297388 	 e_ext: -640.139463
+Iter:   2 	 etot: -239.710369 	 kin_rad: 205.725730 	 kin_ang:  45.635360 	 e_hartree: 122.114447 	 e_xc: -17.331391 	 e_ext: -595.854515
+Iter:   3 	 etot: -240.266681 	 kin_rad: 199.978360 	 kin_ang:  42.314589 	 e_hartree: 115.160774 	 e_xc: -16.656224 	 e_ext: -581.064179
+Iter:   4 	 etot: -240.336379 	 kin_rad: 198.689575 	 kin_ang:  41.888207 	 e_hartree: 113.084722 	 e_xc: -16.488855 	 e_ext: -577.510029
+Iter:   5 	 etot: -240.345709 	 kin_rad: 198.426990 	 kin_ang:  41.930610 	 e_hartree: 112.494580 	 e_xc: -16.452065 	 e_ext: -576.745825
+Iter:   6 	 etot: -240.346739 	 kin_rad: 198.371227 	 kin_ang:  41.979085 	 e_hartree: 112.341136 	 e_xc: -16.444818 	 e_ext: -576.593369
+Iter:   7 	 etot: -240.346842 	 kin_rad: 198.354939 	 kin_ang:  41.999328 	 e_hartree: 112.304812 	 e_xc: -16.443534 	 e_ext: -576.562388
+Iter:   8 	 etot: -240.346855 	 kin_rad: 198.347465 	 kin_ang:  42.005680 	 e_hartree: 112.296106 	 e_xc: -16.443249 	 e_ext: -576.552857
+Iter:   9 	 etot: -240.346857 	 kin_rad: 198.343454 	 kin_ang:  42.007324 	 e_hartree: 112.293769 	 e_xc: -16.443135 	 e_ext: -576.548269
+Iter:  10 	 etot: -240.346857 	 kin_rad: 198.341337 	 kin_ang:  42.007655 	 e_hartree: 112.293035 	 e_xc: -16.443074 	 e_ext: -576.545810
+SCF converged after  10 iters
+Total energy: -240.3468570653406
+
+Atom: Si
+Iter:   0 	 etot: -254.917547 	 kin_rad: 327.876542 	 kin_ang: 107.679012 	 e_hartree: 206.760277 	 e_xc: -26.122269 	 e_ext: -871.111109
+Iter:   1 	 etot: -281.085479 	 kin_rad: 266.843466 	 kin_ang:  71.738761 	 e_hartree: 165.002973 	 e_xc: -21.687562 	 e_ext: -762.983118
+Iter:   2 	 etot: -286.366362 	 kin_rad: 243.688476 	 kin_ang:  57.134116 	 e_hartree: 143.312228 	 e_xc: -19.505252 	 e_ext: -710.995929
+Iter:   3 	 etot: -287.063198 	 kin_rad: 236.761547 	 kin_ang:  52.992847 	 e_hartree: 134.777936 	 e_xc: -18.722655 	 e_ext: -692.872873
+Iter:   4 	 etot: -287.137725 	 kin_rad: 235.167626 	 kin_ang:  52.286120 	 e_hartree: 132.145594 	 e_xc: -18.514832 	 e_ext: -688.222234
+Iter:   5 	 etot: -287.144591 	 kin_rad: 234.883184 	 kin_ang:  52.263630 	 e_hartree: 131.499432 	 e_xc: -18.472727 	 e_ext: -687.318110
+Iter:   6 	 etot: -287.145196 	 kin_rad: 234.843482 	 kin_ang:  52.300534 	 e_hartree: 131.380468 	 e_xc: -18.467050 	 e_ext: -687.202630
+Iter:   7 	 etot: -287.145270 	 kin_rad: 234.834640 	 kin_ang:  52.317712 	 e_hartree: 131.362636 	 e_xc: -18.466655 	 e_ext: -687.193604
+Iter:   8 	 etot: -287.145283 	 kin_rad: 234.829221 	 kin_ang:  52.322809 	 e_hartree: 131.359710 	 e_xc: -18.466611 	 e_ext: -687.190412
+Iter:   9 	 etot: -287.145286 	 kin_rad: 234.825654 	 kin_ang:  52.323925 	 e_hartree: 131.358877 	 e_xc: -18.466542 	 e_ext: -687.187200
+Iter:  10 	 etot: -287.145287 	 kin_rad: 234.823598 	 kin_ang:  52.324039 	 e_hartree: 131.358486 	 e_xc: -18.466482 	 e_ext: -687.184928
+SCF converged after  10 iters
+Total energy: -287.1452866129167
+
+Atom: P
+Iter:   0 	 etot: -300.941718 	 kin_rad: 383.333331 	 kin_ang: 129.166666 	 e_hartree: 240.707836 	 e_xc: -29.149555 	 e_ext: -1024.999997
+Iter:   1 	 etot: -331.647960 	 kin_rad: 312.206587 	 kin_ang:  87.143090 	 e_hartree: 192.045134 	 e_xc: -24.221404 	 e_ext: -898.821368
+Iter:   2 	 etot: -337.900418 	 kin_rad: 285.190750 	 kin_ang:  70.070921 	 e_hartree: 166.659335 	 e_xc: -21.790816 	 e_ext: -838.030609
+Iter:   3 	 etot: -338.724327 	 kin_rad: 276.999562 	 kin_ang:  65.036310 	 e_hartree: 156.450773 	 e_xc: -20.896370 	 e_ext: -816.314601
+Iter:   4 	 etot: -338.798645 	 kin_rad: 275.118971 	 kin_ang:  64.065370 	 e_hartree: 153.366973 	 e_xc: -20.656113 	 e_ext: -810.693846
+Iter:   5 	 etot: -338.803660 	 kin_rad: 274.819537 	 kin_ang:  63.992041 	 e_hartree: 152.726759 	 e_xc: -20.612632 	 e_ext: -809.729364
+Iter:   6 	 etot: -338.804147 	 kin_rad: 274.787938 	 kin_ang:  64.019056 	 e_hartree: 152.640834 	 e_xc: -20.608208 	 e_ext: -809.643768
+Iter:   7 	 etot: -338.804235 	 kin_rad: 274.780918 	 kin_ang:  64.032661 	 e_hartree: 152.631924 	 e_xc: -20.608006 	 e_ext: -809.641733
+Iter:   8 	 etot: -338.804255 	 kin_rad: 274.775604 	 kin_ang:  64.036413 	 e_hartree: 152.630409 	 e_xc: -20.607912 	 e_ext: -809.638768
+Iter:   9 	 etot: -338.804259 	 kin_rad: 274.771963 	 kin_ang:  64.037063 	 e_hartree: 152.629656 	 e_xc: -20.607799 	 e_ext: -809.635143
+Iter:  10 	 etot: -338.804260 	 kin_rad: 274.769840 	 kin_ang:  64.037011 	 e_hartree: 152.629190 	 e_xc: -20.607716 	 e_ext: -809.632585
+Iter:  11 	 etot: -338.804261 	 kin_rad: 274.768706 	 kin_ang:  64.036881 	 e_hartree: 152.628919 	 e_xc: -20.607667 	 e_ext: -809.631099
+SCF converged after  11 iters
+Total energy: -338.80426063149235
+
+Atom: S
+Iter:   0 	 etot: -351.350275 	 kin_rad: 444.049380 	 kin_ang: 153.283950 	 e_hartree: 278.362475 	 e_xc: -32.379418 	 e_ext: -1194.666662
+Iter:   1 	 etot: -387.158801 	 kin_rad: 361.629098 	 kin_ang: 104.385513 	 e_hartree: 221.895316 	 e_xc: -26.903076 	 e_ext: -1048.165653
+Iter:   2 	 etot: -394.464893 	 kin_rad: 330.306849 	 kin_ang:  84.515920 	 e_hartree: 192.323725 	 e_xc: -24.193834 	 e_ext: -977.417554
+Iter:   3 	 etot: -395.404965 	 kin_rad: 320.764786 	 kin_ang:  78.517227 	 e_hartree: 180.349202 	 e_xc: -23.183615 	 e_ext: -951.852564
+Iter:   4 	 etot: -395.476843 	 kin_rad: 318.621045 	 kin_ang:  77.304372 	 e_hartree: 176.902560 	 e_xc: -22.917948 	 e_ext: -945.386871
+Iter:   5 	 etot: -395.480905 	 kin_rad: 318.314138 	 kin_ang:  77.194089 	 e_hartree: 176.301735 	 e_xc: -22.875482 	 e_ext: -944.415385
+Iter:   6 	 etot: -395.481450 	 kin_rad: 318.284021 	 kin_ang:  77.211072 	 e_hartree: 176.238601 	 e_xc: -22.871597 	 e_ext: -944.343546
+Iter:   7 	 etot: -395.481571 	 kin_rad: 318.275178 	 kin_ang:  77.220020 	 e_hartree: 176.231374 	 e_xc: -22.871091 	 e_ext: -944.337052
+Iter:   8 	 etot: -395.481599 	 kin_rad: 318.268904 	 kin_ang:  77.222067 	 e_hartree: 176.229060 	 e_xc: -22.870796 	 e_ext: -944.330834
+Iter:   9 	 etot: -395.481606 	 kin_rad: 318.264903 	 kin_ang:  77.222145 	 e_hartree: 176.227798 	 e_xc: -22.870595 	 e_ext: -944.325857
+Iter:  10 	 etot: -395.481607 	 kin_rad: 318.262628 	 kin_ang:  77.221888 	 e_hartree: 176.227083 	 e_xc: -22.870476 	 e_ext: -944.322730
+Iter:  11 	 etot: -395.481608 	 kin_rad: 318.261415 	 kin_ang:  77.221676 	 e_hartree: 176.226692 	 e_xc: -22.870410 	 e_ext: -944.320981
+SCF converged after  11 iters
+Total energy: -395.4816078275817
+
+Atom: Cl
+Iter:   0 	 etot: -406.265070 	 kin_rad: 510.209873 	 kin_ang: 180.179011 	 e_hartree: 319.939796 	 e_xc: -35.815979 	 e_ext: -1380.777772
+Iter:   1 	 etot: -447.767908 	 kin_rad: 415.215766 	 kin_ang: 123.556752 	 e_hartree: 254.727434 	 e_xc: -29.736771 	 e_ext: -1211.531089
+Iter:   2 	 etot: -456.212557 	 kin_rad: 379.113106 	 kin_ang: 100.540841 	 e_hartree: 220.469596 	 e_xc: -26.719558 	 e_ext: -1129.616541
+Iter:   3 	 etot: -457.260324 	 kin_rad: 368.132587 	 kin_ang:  93.509008 	 e_hartree: 206.637617 	 e_xc: -25.589970 	 e_ext: -1099.949566
+Iter:   4 	 etot: -457.329186 	 kin_rad: 365.752684 	 kin_ang:  92.080037 	 e_hartree: 202.901666 	 e_xc: -25.304834 	 e_ext: -1092.758739
+Iter:   5 	 etot: -457.333073 	 kin_rad: 365.445152 	 kin_ang:  91.944903 	 e_hartree: 202.355543 	 e_xc: -25.264620 	 e_ext: -1091.814052
+Iter:   6 	 etot: -457.333777 	 kin_rad: 365.411427 	 kin_ang:  91.951233 	 e_hartree: 202.304088 	 e_xc: -25.260572 	 e_ext: -1091.739953
+Iter:   7 	 etot: -457.333944 	 kin_rad: 365.398604 	 kin_ang:  91.954786 	 e_hartree: 202.294183 	 e_xc: -25.259486 	 e_ext: -1091.722032
+Iter:   8 	 etot: -457.333983 	 kin_rad: 365.390747 	 kin_ang:  91.954861 	 e_hartree: 202.290043 	 e_xc: -25.258918 	 e_ext: -1091.710716
+Iter:   9 	 etot: -457.333992 	 kin_rad: 365.386156 	 kin_ang:  91.954238 	 e_hartree: 202.287972 	 e_xc: -25.258606 	 e_ext: -1091.703752
+Iter:  10 	 etot: -457.333994 	 kin_rad: 365.383629 	 kin_ang:  91.953714 	 e_hartree: 202.286896 	 e_xc: -25.258440 	 e_ext: -1091.699792
+Iter:  11 	 etot: -457.333995 	 kin_rad: 365.382296 	 kin_ang:  91.953392 	 e_hartree: 202.286337 	 e_xc: -25.258353 	 e_ext: -1091.697667
+SCF converged after  11 iters
+Total energy: -457.3339947099845
+
+Atom: Ar
+Iter:   0 	 etot: -465.807948 	 kin_rad: 581.999995 	 kin_ang: 209.999999 	 e_hartree: 365.655405 	 e_xc: -39.463354 	 e_ext: -1583.999992
+Iter:   1 	 etot: -513.625148 	 kin_rad: 473.072204 	 kin_ang: 144.748499 	 e_hartree: 290.715197 	 e_xc: -32.726544 	 e_ext: -1389.434504
+Iter:   2 	 etot: -523.296504 	 kin_rad: 431.687112 	 kin_ang: 118.218212 	 e_hartree: 251.257939 	 e_xc: -29.372741 	 e_ext: -1295.087025
+Iter:   3 	 etot: -524.445681 	 kin_rad: 419.180015 	 kin_ang: 110.085537 	 e_hartree: 235.475847 	 e_xc: -28.120385 	 e_ext: -1261.066696
+Iter:   4 	 etot: -524.511892 	 kin_rad: 416.593232 	 kin_ang: 108.468224 	 e_hartree: 231.511085 	 e_xc: -27.820707 	 e_ext: -1253.263726
+Iter:   5 	 etot: -524.516202 	 kin_rad: 416.290937 	 kin_ang: 108.318407 	 e_hartree: 231.023786 	 e_xc: -27.783206 	 e_ext: -1252.366125
+Iter:   6 	 etot: -524.517134 	 kin_rad: 416.250010 	 kin_ang: 108.313644 	 e_hartree: 230.974296 	 e_xc: -27.778424 	 e_ext: -1252.276660
+Iter:   7 	 etot: -524.517356 	 kin_rad: 416.232144 	 kin_ang: 108.311574 	 e_hartree: 230.959332 	 e_xc: -27.776628 	 e_ext: -1252.243779
+Iter:   8 	 etot: -524.517408 	 kin_rad: 416.222351 	 kin_ang: 108.309550 	 e_hartree: 230.952868 	 e_xc: -27.775759 	 e_ext: -1252.226418
+Iter:   9 	 etot: -524.517421 	 kin_rad: 416.216974 	 kin_ang: 108.308119 	 e_hartree: 230.949787 	 e_xc: -27.775321 	 e_ext: -1252.216980
+Iter:  10 	 etot: -524.517423 	 kin_rad: 416.214097 	 kin_ang: 108.307263 	 e_hartree: 230.948255 	 e_xc: -27.775099 	 e_ext: -1252.211939
+Iter:  11 	 etot: -524.517424 	 kin_rad: 416.212597 	 kin_ang: 108.306800 	 e_hartree: 230.947486 	 e_xc: -27.774988 	 e_ext: -1252.209318
+SCF converged after  11 iters
+Total energy: -524.5174240197648
+
+Atom: K
+Iter:   0 	 etot: -532.712892 	 kin_rad: 659.744206 	 kin_ang: 233.981480 	 e_hartree: 403.354563 	 e_xc: -42.341762 	 e_ext: -1787.451378
+Iter:   1 	 etot: -584.658875 	 kin_rad: 536.876374 	 kin_ang: 164.655349 	 e_hartree: 322.383058 	 e_xc: -35.313347 	 e_ext: -1573.260309
+Iter:   2 	 etot: -595.256071 	 kin_rad: 489.823449 	 kin_ang: 136.359736 	 e_hartree: 279.830353 	 e_xc: -31.821931 	 e_ext: -1469.447679
+Iter:   3 	 etot: -596.570914 	 kin_rad: 475.272720 	 kin_ang: 127.598954 	 e_hartree: 262.819956 	 e_xc: -30.517595 	 e_ext: -1431.744948
+Iter:   4 	 etot: -596.677816 	 kin_rad: 471.948729 	 kin_ang: 125.775351 	 e_hartree: 258.206526 	 e_xc: -30.187686 	 e_ext: -1422.420736
+Iter:   5 	 etot: -596.693660 	 kin_rad: 471.359845 	 kin_ang: 125.564770 	 e_hartree: 257.264788 	 e_xc: -30.129546 	 e_ext: -1420.753518
+Iter:   6 	 etot: -596.697783 	 kin_rad: 471.225845 	 kin_ang: 125.562816 	 e_hartree: 257.000620 	 e_xc: -30.117694 	 e_ext: -1420.369371
+Iter:   7 	 etot: -596.698776 	 kin_rad: 471.174587 	 kin_ang: 125.570287 	 e_hartree: 256.889752 	 e_xc: -30.113793 	 e_ext: -1420.219609
+Iter:   8 	 etot: -596.698993 	 kin_rad: 471.149856 	 kin_ang: 125.573420 	 e_hartree: 256.839420 	 e_xc: -30.112176 	 e_ext: -1420.149512
+Iter:   9 	 etot: -596.699038 	 kin_rad: 471.137293 	 kin_ang: 125.574279 	 e_hartree: 256.816735 	 e_xc: -30.111460 	 e_ext: -1420.115885
+Iter:  10 	 etot: -596.699047 	 kin_rad: 471.130923 	 kin_ang: 125.574407 	 e_hartree: 256.806563 	 e_xc: -30.111136 	 e_ext: -1420.099804
+Iter:  11 	 etot: -596.699049 	 kin_rad: 471.127742 	 kin_ang: 125.574376 	 e_hartree: 256.801995 	 e_xc: -30.110988 	 e_ext: -1420.092173
+Iter:  12 	 etot: -596.699049 	 kin_rad: 471.126177 	 kin_ang: 125.574341 	 e_hartree: 256.799932 	 e_xc: -30.110921 	 e_ext: -1420.088579
+SCF converged after  12 iters
+Total energy: -596.6990494860274
+
