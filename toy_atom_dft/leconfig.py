@@ -245,7 +245,6 @@ E_CONFIG_ARRAY = {
 }
 
 SYMBOLS = {
-     "" : 0,
      "H": 1,
     "He": 2,
     "Li": 3,
