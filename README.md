@@ -1,14 +1,13 @@
 ## utils
 
-### 1. algorithms-learn
-Naive implementation of data structure (far from completeness), ml algorithms (far from completeness), and some other things. 
+### 1. 算法学习
+数据结构基础，机器学习基础算法，以及一些别的小玩意。内容远未完成。
 
-### 2. home-made Hartree-Fock code
-Home-made minimalistic implementation of Hartree-Fock calculation. Very easy to read and modify, but poor in performance and only deal with restricted closed-shell molecule and Cartesian basis functions. 
+### 2. 闭壳层Hartree-Fock代码
+`Python`+`Fortran`+`C/C++`混编Hartree-Fock闭壳层量子化学计算代码。代码易读且易修改，相同机器上性能比`Psi4`慢近20倍，目前仅支持闭壳层体系，笛卡尔基函数计算。
 
-### 3. quantum dynamics in the Lindbladian scheme
-Very fundamental quantum dynamics related materials, introduing density matrix, Liouville space, and system-bath coupling in the Lindbladian scheme. 
+### 3. Lindbladian量子动力学计算
+非常基础的量子动力学相关内容：密度矩阵，刘维尔空间，Lindbladian下系统-环境耦合。量子动力学纯粹是数学游戏，是屠龙之术，但是世界上没有龙。
 
-
-### 4. Toy atom DFT implementation
-Conceptual DFT calculation on spherically symmetrical system (viz. atom). Only Hartree-Fock-Slater exchange functional is used. Basis functions are not what are used in a real DFT calculation, but just some Gaussian functions. 
+### 4. 原子密度泛函计算玩具模型
+高斯型基函数，Slater-Hartree-Fock局部密度近似交换泛函（相关泛函缺失），中心点位于坐标原点的球对称体系密度泛函计算。仅用作概念上的示例。
