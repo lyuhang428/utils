@@ -1,5 +1,6 @@
-## Home-made minimalistic restricted Hartree-Fock calculation
+## 限制性闭壳层Hartree-Fock量子化学计算
 
+工作代码包括：
 \- utils.py
 
 \- molecule.py
@@ -10,15 +11,11 @@
 
 \- core.f90
 
-are working code. 
 
-This is home-made minimalistic Hartree-Fock demo, currently only works for restricted closed-shell molecules. The molecular integral (overlap, kinetic, nuclear-electron attraction, and electron repulsion integral) are implemented under `McMurchie-Davidson` scheme (in principle any arbitrary angular quantum number) and `Rys` quadrature (up to $d$-orbital). Fortran code does the computational heavy part, and interfaced to Python via `f2py` module. 
+该代码目前只支持闭壳层体系，分子积分（重叠，动能，点电荷吸引，电子排斥）计算使用`McMurchie-Davidson`算法（理论山支持任意角动量量子数，但是只测试到f轨道），电子排斥积分同时支持`Rys quadrature`方法（最高仅支持d轨道）。分子积分部分使用`Fortran`进行计算，通过`f2py`模块在`Python`中调用。分子积分目前仅支持笛卡尔基函数。
 
-The code here is much slower than `Psi4` (one order of magnitude slower), but readability wins, and is very easy to be modified and implemented with new methods (i.e. wavefunction extraction). 
+计算效率方面比`Psi4`慢近20倍，但是代码易读易修改。
 
-To use the code, Gnu scientific library `gsl` should be installed, and linked via `export LD_LIBRARY_PATH=/path/to/gsl_lib/`. 
+`Fotran`部分依赖`gsl`库进行阶乘以及合流超几何函数（Confluent hypergeometric function）计算。若该库未安装在系统路径，使用前先进行链接：`export LD_LIBRARY_PATH=/path/to/gsl_lib/`. 
 
-`multiprocessing` module is used to do parallel computing, pretty straightford and handy. 
-
-
-Author: lyh
+使用`multiprocessing`模块以及电子排斥积分八重对称性进行并行计算。
