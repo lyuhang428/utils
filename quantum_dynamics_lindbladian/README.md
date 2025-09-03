@@ -1,1 +1,1 @@
-## (very) Fundamental quantum dynamics under Lindbladian scheme
+## 古希腊掌管量子动力学的神说：问题的关键，是抓住关键的问题
